@@ -1,0 +1,210 @@
+/* reports.css */
+:root {
+  --bg: #0f172a; /* slate-900 */
+  --panel: #111827; /* gray-900 */
+  --muted: #94a3b8; /* slate-400 */
+  --text: #e5e7eb; /* gray-200 */
+  --accent: #1e279f; /* cyan-400 */
+  --ok: #22c55e; /* green-500 */
+  --warn: #f59e0b; /* amber-500 */
+  --danger: #ef4444; /* red-500 */
+  --ring: rgba(34, 211, 238, 0.35);
+}
+
+.reports-page * {
+  box-sizing: border-box;
+}
+
+.reports-page html,
+.reports-page body {
+  height: 100%;
+}
+
+.reports-page {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  background: radial-gradient(1200px 800px at 10% -10%, #0b1220 0%, var(--bg) 45%);
+  color: var(--text);
+}
+
+/* Header */
+.reports-page header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(12px);
+  background: linear-gradient(180deg, rgba(15,23,42,.85) 0%, rgba(15,23,42,.65) 100%);
+  border-bottom: 1px solid rgba(148,163,184,.12);
+}
+
+.reports-page .wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 18px 20px;
+}
+
+.reports-page .title {
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.reports-page .logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #06b6d4 0%, #22d3ee 35%, #60a5fa 100%);
+  box-shadow: 0 10px 25px rgba(34,211,238,.25);
+}
+
+.reports-page h1 {
+  font-size: 20px;
+  margin: 0;
+  letter-spacing: .2px;
+}
+
+.reports-page .muted {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* Controles */
+.reports-page .controls {
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:10px;
+}
+
+.reports-page .control {
+  display:flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 12px;
+  border-radius: 12px;
+  background: rgba(17,24,39,.6);
+  border: 1px solid rgba(148,163,184,.14);
+}
+
+.reports-page .control input,
+.reports-page .control select {
+  background: transparent;
+  color: var(--text);
+  border: none;
+  outline: none;
+}
+
+.reports-page .btn {
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(148,163,184,.18);
+  background: linear-gradient(180deg, rgba(30,41,59,.9), rgba(17,24,39,.9));
+  color: var(--text);
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing:.2px;
+}
+
+.reports-page .btn:hover {
+  box-shadow: 0 0 0 3px var(--ring);
+}
+
+/* Main */
+.reports-page main.wrap {
+  padding-top: 24px;
+}
+
+.reports-page .grid {
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap:16px;
+}
+
+.reports-page .card {
+  grid-column: span 12;
+  background: linear-gradient(180deg, rgba(17,24,39,.8), rgba(2,6,23,.65));
+  border: 1px solid rgba(148,163,184,.12);
+  border-radius: 18px;
+  padding: 16px;
+  position: relative;
+  box-shadow: 0 10px 35px rgba(2,6,23,.4);
+}
+
+.reports-page .card h2 {
+  font-size: 16px;
+  margin: 0 0 6px;
+}
+
+.reports-page .card p {
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* KPIs */
+.reports-page .kpis {
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:12px;
+}
+
+.reports-page .kpi {
+  padding:14px;
+  border-radius: 14px;
+  border:1px solid rgba(148,163,184,.12);
+  background: rgba(2,6,23,.35);
+}
+
+.reports-page .kpi .label {
+  font-size:12px;
+  color: var(--muted);
+}
+
+.reports-page .kpi .value {
+  font-size:24px;
+  font-weight:700;
+  margin-top:6px;
+}
+
+.reports-page .span-6 {
+  grid-column: span 12;
+}
+
+@media (min-width: 900px) {
+  .reports-page .span-6 { grid-column: span 6; }
+  .reports-page .card { padding: 18px 20px; }
+}
+
+/* Tablas */
+.reports-page .table-wrap {
+  overflow:auto;
+  border-radius: 12px;
+  border:1px solid rgba(148,163,184,.12);
+}
+
+.reports-page table {
+  width:100%;
+  border-collapse: collapse;
+  min-width: 520px;
+}
+
+.reports-page th,
+.reports-page td {
+  padding: 10px 12px;
+  border-bottom:1px solid rgba(148,163,184,.12);
+  font-size: 13px;
+}
+
+.reports-page th {
+  text-align:left;
+  color: var(--muted);
+  font-weight:600;
+}
+
+/* Footer */
+.reports-page footer {
+  text-align:center;
+  padding: 30px 0;
+  color: var(--muted);
+  font-size: 12px;
+}

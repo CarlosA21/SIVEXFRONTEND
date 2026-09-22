@@ -1,0 +1,378 @@
+/* General Container Styles */
+.user-all-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #eef2f7; /* Light, calm blue-gray background */
+  min-height: 100vh;
+}
+
+h1 {
+  color: #2c3e50; /* Darker, sophisticated blue-gray for headings */
+  margin-bottom: 25px;
+  font-size: 2.8em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+}
+
+/* Controls Bar for Search and New User */
+.controls-container {
+  width: 100%;
+  max-width: 950px; /* Slightly wider for better spacing */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 20px; /* Increased gap for better separation */
+  background-color: #ffffff; /* White background for the control bar */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.search-container label {
+  font-weight: 600; /* Bolder label */
+  color: #34495e; /* Darker blue-gray */
+}
+
+.search-input {
+  padding: 12px 18px;
+  border: 1px solid #c5d0e0; /* Softer border color */
+  border-radius: 6px; /* Slightly more rounded */
+  font-size: 1em;
+  min-width: 250px; /* Wider search input */
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-input:focus {
+  border-color: #3498db; /* Primary blue on focus */
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.search-button {
+    margin-left: 10px;
+  padding: 12px 18px;
+  background-color: #3498db; /* Bootstrap primary blue */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Increased gap for icon and text */
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  font-weight: 500;
+}
+
+.search-button:hover {
+  background-color: #2980b9; /* Darker blue */
+  transform: translateY(-2px);
+}
+
+.new-user-button {
+  padding: 12px 18px;
+  background-color: #2ecc71; /* Bootstrap success green */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  font-weight: 500;
+}
+
+.new-user-button:hover {
+  background-color: #27ae60; /* Darker green */
+  transform: translateY(-2px);
+}
+
+/* User List Container */
+.user-list {
+  width: 100%;
+  max-width: 950px; /* Aligned with controls */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* More spacing between user cards */
+}
+
+/* User Card Styles */
+.user-card {
+  background-color: #ffffff;
+  border-radius: 10px; /* More rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Stronger, softer shadow */
+  padding: 20px; /* More padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 5px solid #3498db; /* Accent color */
+}
+
+.user-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.user-name {
+  font-size: 1.3em; /* Larger name */
+  font-weight: 700; /* Extra bold */
+  color: #2c3e50;
+}
+
+.user-role {
+  font-size: 1em;
+  color: #7f8c8d; /* Muted gray for role */
+  font-style: normal; /* Remove italic for better readability */
+  background-color: #ecf0f1; /* Light background for role tag */
+  padding: 5px 10px;
+  border-radius: 15px; /* Pill shape */
+  font-weight: 500;
+}
+
+.user-actions {
+  display: flex;
+  gap: 12px; /* Spacing between action buttons */
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+/* General Action Button Styles */
+.action-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95em;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+  white-space: nowrap;
+  display: inline-flex; /* Align icon and text */
+  align-items: center;
+  gap: 8px;
+}
+
+.action-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.action-button i {
+  font-size: 1.1em; /* Slightly larger icons */
+}
+
+.details-button {
+  background-color: #3498db; /* Primary blue */
+  color: white;
+}
+.details-button:hover {
+  background-color: #2980b9;
+}
+
+.edit-button {
+  background-color: #f39c12; /* Bootstrap warning orange */
+  color: white;
+}
+.edit-button:hover {
+  background-color: #e67e22;
+}
+
+.status-button {
+  background-color: #2ecc71; /* Bootstrap success green */
+  color: white;
+}
+.status-button:hover {
+  background-color: #27ae60;
+}
+
+.delete-button {
+  background-color: #e74c3c; /* Bootstrap danger red */
+  color: white;
+}
+.delete-button:hover {
+  background-color: #c0392b;
+}
+
+/* User Modal Styles (for details and creation) */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(44, 62, 80, 0.8); /* Darker, sophisticated overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px); /* Frosted glass effect */
+}
+
+.modal-content-user { /* Specific class for user modal */
+  background-color: #ffffff;
+  padding: 40px; /* More padding */
+  border-radius: 12px; /* More rounded corners */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25); /* Deeper shadow */
+  width: 90%;
+  max-width: 550px; /* Slightly wider modal */
+  position: relative;
+  animation: modal-fade-in 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smoother animation */
+}
+
+.modal-content-user h2 {
+  margin-top: 0;
+  color: #2c3e50; /* Consistent heading color */
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2em;
+}
+
+.modal-content-user p {
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.modal-content-user .close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  background-color: #ecf0f1; /* Light gray */
+  color: #2c3e50;
+  font-weight: bold;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  font-size: 1em;
+}
+.modal-content-user .close-button:hover {
+  background-color: #bdc3c7;
+  transform: translateY(-2px);
+}
+
+/* Styles for the form within the user modal */
+.create-user-form,
+.edit-user-form { /* Reusing styles for forms */
+  display: flex;
+  flex-direction: column;
+  gap: 18px; /* More spacing between form fields */
+}
+
+.create-user-form label,
+.edit-user-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #34495e; /* Dark blue-gray */
+}
+
+.create-user-form input,
+.create-user-form select,
+.edit-user-form input,
+.edit-user-form select {
+  padding: 12px;
+  border: 1px solid #c5d0e0; /* Softer border */
+  border-radius: 6px;
+  font-size: 1em;
+  margin-top: 6px; /* Space between label and field */
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.create-user-form input:focus,
+.create-user-form select:focus,
+.edit-user-form input:focus,
+.edit-user-form select:focus {
+  border-color: #3498db; /* Primary blue on focus */
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.save-button,
+.cancel-button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 1.05em;
+  font-weight: 700; /* Bolder buttons */
+  transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+.save-button {
+  background-color: #2ecc71; /* Green */
+  color: white;
+}
+.save-button:hover {
+  background-color: #27ae60;
+  transform: translateY(-3px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cancel-button {
+  background-color: #e74c3c; /* Red */
+  color: white;
+}
+.cancel-button:hover {
+  background-color: #c0392b;
+  transform: translateY(-3px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.create-user-form .error-message,
+.edit-user-form .error-message {
+  color: #e74c3c; /* Red for errors */
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+/* Animation for the modal */
+@keyframes modal-fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Status Messages */
+.loading,
+.error {
+  font-size: 1.6em;
+  color: #555;
+  text-align: center;
+  padding: 60px 20px;
+  font-weight: 500;
+}
+
+.error {
+  color: #e74c3c; /* Red for error messages */
+}

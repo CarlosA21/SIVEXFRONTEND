@@ -1,0 +1,104 @@
+/* Header Navigation Bar */
+.navbar {
+  background-color: #ffffff; /* White background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  padding: 0.75rem 1.5rem; /* Comfortable padding */
+  border-bottom: 1px solid #e9ecef; /* Light border */
+}
+
+.navbar .container-fluid {
+  display: flex;
+  justify-content: space-between; /* Distribute items */
+  align-items: center;
+}
+
+/* Button to toggle sidebar (Desktop view) */
+.btn-sigescal {
+  background-color: #007bff; /* Primary blue */
+  color: white;
+  border: none;
+  padding: 0.5rem 0.9rem;
+  border-radius: 0.375rem; /* Slightly more rounded */
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  margin-right: 1rem; /* Space from next element */
+}
+
+.btn-sigescal:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* User Dropdown */
+.dropdown .dropdown-toggle {
+  color: #343a40; /* Dark text for dropdown toggle */
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.dropdown .dropdown-toggle:hover {
+  color: #007bff; /* Primary blue on hover */
+}
+
+.dropdown-toggle .d-grid {
+  text-align: right; /* Align text to the right */
+}
+
+.dropdown-toggle .fw-bold {
+  font-size: 0.9rem; /* User name size */
+  color: #212529; /* Darker for name */
+}
+
+.dropdown-toggle .small {
+  font-size: 0.8rem; /* Role name size */
+  color: #6c757d; /* Muted color for role */
+}
+
+.dropdown-toggle .bi-person-circle {
+  font-size: 2rem; /* Larger user icon */
+  color: #adb5bd; /* Gray icon */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  border-radius: 0.375rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+  padding: 0.5rem 0; /* Padding for menu items */
+  border: 1px solid #e9ecef; /* Light border */
+}
+
+.dropdown-menu .dropdown-item {
+  padding: 0.6rem 1.5rem;
+  font-size: 0.95rem;
+  color: #495057;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #e9ecef;
+  color: #007bff;
+}
+
+/* Responsive adjustments for Header */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.75rem 1rem; /* Slightly less padding on mobile */
+  }
+
+  .btn-sigescal {
+    display: block; /* Ensure it's visible when needed */
+    font-size: 1rem;
+    padding: 0.4rem 0.7rem;
+  }
+
+  /* Hide user name and role on mobile for a cleaner look */
+  .dropdown-toggle .d-grid {
+    display: none;
+  }
+
+  .dropdown-toggle .bi-person-circle {
+    font-size: 1.8rem; /* Slightly smaller icon on mobile */
+  }
+}

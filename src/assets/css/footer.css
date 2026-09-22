@@ -1,0 +1,13 @@
+/* Footer Styles */
+.footer {
+  background-color: #f8f9fa; /* Light background */
+  color: #6c757d; /* Muted text color */
+  padding: 1.5rem 0; /* Vertical padding */
+  margin-top: auto; /* Pushes footer to the bottom */
+  font-size: 0.9rem;
+  border-top: 1px solid #e9ecef; /* Subtle top border */
+}
+
+.footer span {
+  display: block; /* Ensure span takes full width for centering */
+}

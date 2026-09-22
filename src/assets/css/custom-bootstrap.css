@@ -1,0 +1,488 @@
+/* ============================= */
+/* 🎨 Colores globales */
+/* ============================= */
+:root {
+  --bs-primary: #041147;
+  --bs-secondary: #ff8300;
+
+  --bs-primary-rgb: 4, 17, 71;
+  --bs-secondary-rgb: 255, 131, 0;
+}
+
+/* ============================= */
+/* 🎨 Botones personalizados */
+/* ============================= */
+.btn-primary {
+  background-color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #020b2f !important;
+  border-color: #020b2f !important;
+}
+
+.btn-secondary,
+.btn-outline-secondary {
+  background-color: var(--bs-primary) !important;
+  /* border-color: var(--bs-secondary) !important; */
+  color: #fff !important;
+}
+
+.btn-secondary:hover,
+.btn-outline-secondary:hover {
+  background-color: #ff8300 !important;
+  border-color: #cc6900 !important;
+  color: #fff !important;
+}
+
+/* ============================= */
+/* 🎨 Enlaces globales */
+/* ============================= */
+a,
+.btn-link {
+  /* color: var(--bs-secondary) !important; */
+  text-decoration: none;
+}
+
+a:hover,
+.btn-link:hover {
+  color: #cc6900 !important;
+  text-decoration: underline;
+}
+
+/* ============================= */
+/* 🎨 Sidebar */
+/* ============================= */
+.sidebar .list-group-item {
+  color: var(--bs-primary) !important;
+}
+
+.sidebar .list-group-item.active-link,
+.sidebar .list-group-item.active-submenu {
+  background-color: var(--bs-primary) !important;
+  color: #fff !important;
+}
+
+
+
+/* .sidebar{
+  background-color: var(--bs-secondary) !important;
+  color: #fff !important;
+} */
+
+/* ============================= */
+/* 🎨 Header */
+/* ============================= */
+.navbar {
+  border-bottom: 3px solid var(--bs-primary);
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: var(--bs-secondary) !important;
+  color: #fff !important;
+}
+
+/* ============================= */
+/* 🎨 Footer */
+/* ============================= */
+.footer {
+  background-color: var(--bs-primary);
+  color: #fff;
+}
+
+
+/* ============================= */
+/* 🎨 ProjectForm Harmonization */
+/* ============================= */
+
+/* Botones principales */
+#project-form .btn-primary,
+#project-form .btn-success {
+  background-color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+  color: #fff !important;
+}
+
+#project-form .btn-primary:hover,
+#project-form .btn-success:hover {
+  background-color: #020b2f !important;
+  border-color: #020b2f !important;
+}
+
+/* Botón de advertencia (Editar) */
+#project-form .btn-warning {
+  background-color: var(--bs-secondary) !important;
+  border-color: var(--bs-secondary) !important;
+  color: #fff !important;
+}
+
+#project-form .btn-warning:hover {
+  background-color: #cc6900 !important;
+  border-color: #cc6900 !important;
+}
+
+/* Botones outline */
+#project-form .btn-outline-primary {
+  color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+}
+
+#project-form .btn-outline-primary:hover {
+  background-color: var(--bs-primary) !important;
+  color: #fff !important;
+}
+
+#project-form .btn-outline-danger {
+  border-color: #dc3545 !important;
+  color: #dc3545 !important;
+}
+
+#project-form .btn-outline-danger:hover {
+  background-color: #dc3545 !important;
+  color: #fff !important;
+}
+
+/* Badges */
+#project-form .badge.bg-success {
+  background-color: var(--bs-secondary) !important;
+}
+
+#project-form .badge.bg-info {
+  background-color: var(--bs-primary) !important;
+}
+
+#project-form .badge.bg-secondary {
+  background-color: #6c757d !important;
+}
+
+/* Cards */
+#project-form .card {
+  border-left: 5px solid var(--bs-primary);
+  border-radius: 10px;
+}
+
+/* Modal header */
+#project-form .modal-header {
+  background-color: var(--bs-primary);
+  color: #fff;
+}
+
+#project-form .modal-title {
+  color: #fff !important;
+}
+
+/* Inputs & selects */
+#project-form .form-control:focus,
+#project-form .form-select:focus {
+  border-color: var(--bs-secondary) !important;
+  box-shadow: 0 0 0 0.25rem rgba(var(--bs-secondary-rgb), 0.25) !important;
+}
+
+
+
+/* ============================= */
+/* 🎨 UserAll Harmonization */
+/* ============================= */
+
+#user-all .btn-primary,
+#user-all .btn-success {
+  background-color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+  color: #fff !important;
+}
+
+#user-all .btn-primary:hover,
+#user-all .btn-success:hover {
+  background-color: #020b2f !important;
+  border-color: #020b2f !important;
+}
+
+#user-all .btn-outline-primary {
+  color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+}
+
+#user-all .btn-outline-primary:hover {
+  background-color: var(--bs-primary) !important;
+  color: #fff !important;
+}
+
+#user-all .btn-outline-warning {
+  color: var(--bs-secondary) !important;
+  border-color: var(--bs-secondary) !important;
+}
+
+#user-all .btn-outline-warning:hover {
+  background-color: var(--bs-secondary) !important;
+  color: #fff !important;
+}
+
+#user-all .btn-outline-info {
+  color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+}
+
+#user-all .btn-outline-info:hover {
+  background-color: var(--bs-primary) !important;
+  color: #fff !important;
+}
+
+#user-all .btn-outline-secondary {
+  color: var(--bs-secondary) !important;
+  border-color: var(--bs-secondary) !important;
+}
+
+#user-all .btn-outline-secondary:hover {
+  background-color: var(--bs-secondary) !important;
+  color: #fff !important;
+}
+
+/* Badges */
+#user-all .badge.bg-info {
+  background-color: var(--bs-primary) !important;
+}
+
+#user-all .badge.bg-success {
+  background-color: var(--bs-secondary) !important;
+}
+
+#user-all .badge.bg-secondary {
+  background-color: #6c757d !important;
+}
+
+/* Tabla */
+#user-all .table thead {
+  background-color: var(--bs-primary) !important;
+  color: #fff !important;
+}
+
+/* Modal header */
+#user-all .modal-header {
+  background-color: var(--bs-primary) !important;
+  color: #fff !important;
+}
+
+#user-all .modal-title {
+  color: #fff !important;
+}
+
+/* Inputs focus */
+#user-all .form-control:focus,
+#user-all .form-select:focus {
+  border-color: var(--bs-secondary) !important;
+  box-shadow: 0 0 0 0.25rem rgba(var(--bs-secondary-rgb), 0.25) !important;
+}
+
+
+
+/* ============================= */
+/* 🎨 EnclosuresForm Harmonization */
+/* ============================= */
+
+#enclosures-form .btn-primary,
+#enclosures-form .btn-success {
+  background-color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+  color: #fff !important;
+}
+
+#enclosures-form .btn-primary:hover,
+#enclosures-form .btn-success:hover {
+  background-color: #020b2f !important;
+  border-color: #020b2f !important;
+}
+
+/* Botón editar → secundario */
+#enclosures-form .btn-warning {
+  background-color: var(--bs-secondary) !important;
+  border-color: var(--bs-secondary) !important;
+  color: #fff !important;
+}
+
+#enclosures-form .btn-warning:hover {
+  background-color: #cc6900 !important;
+  border-color: #cc6900 !important;
+  color: #fff !important;
+}
+
+/* Botón eliminar → rojo */
+#enclosures-form .btn-danger {
+  background-color: #dc3545 !important;
+  border-color: #dc3545 !important;
+}
+
+#enclosures-form .btn-danger:hover {
+  background-color: #a71d2a !important;
+  border-color: #a71d2a !important;
+}
+
+/* Tablas */
+#enclosures-form table thead {
+  background-color: var(--bs-primary);
+  color: #fff;
+}
+
+#enclosures-form table tbody tr:hover {
+  background-color: rgba(var(--bs-secondary-rgb), 0.1);
+}
+
+/* Modales */
+#enclosures-form .modal-header {
+  background-color: var(--bs-primary);
+  color: #fff;
+}
+
+#enclosures-form .modal-title {
+  color: #fff !important;
+}
+
+/* Inputs / Select */
+#enclosures-form .form-control:focus,
+#enclosures-form .form-select:focus {
+  border-color: var(--bs-secondary) !important;
+  box-shadow: 0 0 0 0.25rem rgba(var(--bs-secondary-rgb), 0.25) !important;
+}
+
+
+/* ============================= */
+/* 🎨 TypeProjectForm Harmonization */
+/* ============================= */
+
+/* Botón principal (Nuevo Tipo) */
+#type-project-form .btn-primary {
+  background-color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+  color: #fff !important;
+}
+
+#type-project-form .btn-primary:hover {
+  background-color: #020b2f !important;
+  border-color: #020b2f !important;
+}
+
+/* Botón de éxito (Guardar en modal Crear) */
+#type-project-form .btn-success {
+  background-color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+  color: #fff !important;
+}
+
+#type-project-form .btn-success:hover {
+  background-color: #020b2f !important;
+  border-color: #020b2f !important;
+}
+
+/* Botón de advertencia (Editar en tabla y modal) */
+#type-project-form .btn-warning {
+  background-color: var(--bs-secondary) !important;
+  border-color: var(--bs-secondary) !important;
+  color: #fff !important;
+}
+
+#type-project-form .btn-warning:hover {
+  background-color: #cc6900 !important;
+  border-color: #cc6900 !important;
+}
+
+/* Botón de peligro (Eliminar) */
+#type-project-form .btn-danger {
+  background-color: #dc3545 !important;
+  border-color: #dc3545 !important;
+  color: #fff !important;
+}
+
+#type-project-form .btn-danger:hover {
+  background-color: #a71d2a !important;
+  border-color: #a71d2a !important;
+}
+
+/* Tablas */
+#type-project-form .table thead {
+  background-color: var(--bs-primary);
+  color: #fff;
+}
+
+#type-project-form .table-hover tbody tr:hover {
+  background-color: rgba(4, 17, 71, 0.05) !important;
+}
+
+/* Modales */
+#type-project-form .modal-header {
+  background-color: var(--bs-primary);
+  color: #fff;
+}
+
+#type-project-form .modal-title {
+  color: #fff !important;
+}
+
+/* Inputs y textarea */
+#type-project-form .form-control:focus {
+  border-color: var(--bs-secondary) !important;
+  box-shadow: 0 0 0 0.25rem rgba(var(--bs-secondary-rgb), 0.25) !important;
+}
+
+/* ============================= */
+/* 🎨 ReportsPage Harmonization */
+/* ============================= */
+#reports-page h1 {
+  color: var(--bs-primary);
+  font-weight: 700;
+}
+
+#reports-page .btn-primary {
+  background-color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+  color: #fff !important;
+}
+
+#reports-page .btn-primary:hover {
+  background-color: #020b2f !important;
+  border-color: #020b2f !important;
+}
+
+#reports-page .form-select:focus {
+  border-color: var(--bs-secondary) !important;
+  box-shadow: 0 0 0 0.25rem rgba(255, 131, 0, 0.25) !important;
+}
+
+/* KPIs Cards */
+#reports-page .card {
+  border-left: 5px solid var(--bs-primary);
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+#reports-page .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#reports-page .card h5 {
+  color: var(--bs-secondary);
+  font-weight: 600;
+}
+
+/* Tablas */
+#reports-page table thead {
+  background-color: var(--bs-primary);
+  color: #fff;
+}
+
+#reports-page table tbody tr:hover {
+  background-color: rgba(255, 131, 0, 0.1);
+}
+
+/* Chart.js colores corporativos */
+#reports-page canvas {
+  border-radius: 8px;
+  background: #fff;
+  padding: 10px;
+}
+
+
+/* ============================= */
+/* 🎨 ParticipantsSpeakers Harmonization */
+/* ============================= */

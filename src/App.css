@@ -1,0 +1,93 @@
+/* General App Styles */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --light-bg: #f8f9fa;
+  --dark-text: #343a40;
+  --border-color: #e9ecef;
+  --card-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  --transition-fast: 0.2s ease-in-out;
+  --transition-slow: 0.3s ease-in-out;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font stack */
+  line-height: 1.6;
+  color: var(--dark-text);
+  background-color: #f4f7f6; /* Off-white background */
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0; /* Removed padding here, handled by layout components */
+  text-align: left; /* Default text alignment to left */
+}
+
+/* Utility for main content area to ensure it doesn't overflow */
+.main-content-area {
+  flex-grow: 1;
+  padding: 2rem; /* Consistent padding for main content */
+  background-color: #ffffff; /* White background for content blocks */
+  border-radius: 0.5rem; /* Rounded corners for content blocks */
+  box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,.05); /* Subtle shadow for content blocks */
+}
+
+/* Override React specific logo styles if they are no longer needed or want them consistent */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter var(--transition-fast);
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card component styles (if you have generic cards) */
+.card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  box-shadow: var(--card-shadow);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem; /* Space between cards */
+}
+
+.card-body {
+  padding: 0; /* Content within the card will define its padding */
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+  #root {
+    padding: 1rem; /* Less padding on mobile */
+  }
+
+  .main-content-area {
+    padding: 1.5rem; /* Less padding in content area on mobile */
+  }
+}
+
+/* Hide documentation specific elements if not needed in the final app */
+.read-the-docs {
+  display: none; /* Hiding this as it's likely for a Vite template */
+}
